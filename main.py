@@ -24,10 +24,9 @@ while True:
     e_param = float(format(abs(next_x - x), '.10f'))
     d_param = abs(f.f(next_x))
 
+    print_row([str(n), str(x), str(next_x), str(e_param), str(d_param)])
     if (e_param <= e) and (d_param <= d):
         break
-
-    print_row([str(n), str(x), str(next_x), str(e_param), str(d_param)])
 
     n += 1
     x = next_x
